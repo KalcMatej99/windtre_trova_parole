@@ -2,7 +2,8 @@
 Il programma trova_parole.py aiuta a trovare le possibili parole per il gioco windtre.
 
 ## Come si usa?
-Installa i requisiti usando il commando pip install -r requirments.txt. Avvia il programma usando il commando python trova_parole.py nel terminale.
+Installa i requisiti usando il commando pip install -r requirments.txt. Avvia il programma usando il commando python trova_parole.py nel terminale. \\
+Usa python trova_parole_con_inserimento_manuale.py nel terminale per usare inserimento manuale.
 
 ### LEGAL STUFF
 

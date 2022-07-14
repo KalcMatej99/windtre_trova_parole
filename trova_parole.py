@@ -77,10 +77,10 @@ def find(s, ch):
 
 
 
-word_length = input("Inserisci la lungezza della parola da indovinare:")
+word_length = int(input("Inserisci la lungezza della parola da indovinare:"))
 
 parole_provate = []
-znane = "_" * word_length
+znane = '_' * word_length
 mozne = []
 ne_mozne = []
 mozne_ampak_ne_na_mestu_x = [[], [], [], [], [], []]
@@ -96,7 +96,7 @@ for linea in range(6):
     indici_per_caratteri_coretti = find(risultato_parola_provata, "2")
 
     for indice_per_carattere_coretto in indici_per_caratteri_coretti:
-        znane[indice_per_carattere_coretto] = parola_provata[indice_per_carattere_coretto]
+        znane = znane[:indice_per_carattere_coretto] + parola_provata[indice_per_carattere_coretto] + znane[indice_per_carattere_coretto + 1:]
 
 
     indici_per_caratteri_possibili = find(risultato_parola_provata, "1")
